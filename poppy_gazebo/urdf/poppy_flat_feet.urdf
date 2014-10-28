@@ -1,0 +1,1764 @@
+<?xml version="1.0" ?>
+
+<robot name="poppy">
+
+
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="ros_control">
+    <robotNamespace>/poppy</robotNamespace>
+      <alwaysOn>true</alwaysOn>
+  </plugin>
+</gazebo>
+
+
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00547073553339963 -0.0362301795948891 0.0246390451214859"
+        rpy="0 0 0" />
+      <mass
+        value="0.197612645492092" />
+      <inertia
+        ixx="0.00015494485478976"
+        ixy="-1.3487523250187E-08"
+        ixz="4.38412007017049E-06"
+        iyy="0.000114480125738892"
+        iyz="-1.23848284201495E-05"
+        izz="9.78230753966605E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="hip_right">
+    <inertial>
+      <origin
+        xyz="-0.041580228804437 0.0189478155490562 -0.000115273565613235"
+        rpy="0 0 0" />
+      <mass
+        value="0.0849693013074495" />
+      <inertia
+        ixx="2.84315021982451E-05"
+        ixy="-1.29048884081274E-06"
+        ixz="8.50992363187578E-07"
+        iyy="2.90510217309071E-05"
+        iyz="-1.39223987217359E-06"
+        izz="2.19875002658489E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/hip_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/hip_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 -0.0588574645143106 0.0213108690035943"
+      rpy="1.5707963267949 -0.00131106742434726 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip_right" />
+    <axis
+      xyz="0 0 -1" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="connector_right">
+    <inertial>
+      <origin
+        xyz="0.0135560278583318 -0.0233676662137517 0.000129665624180916"
+        rpy="0 0 0" />
+      <mass
+        value="0.0814129515896397" />
+      <inertia
+        ixx="2.21251350581055E-05"
+        ixy="-7.22958269374926E-07"
+        ixz="2.39639363248879E-07"
+        iyy="3.58011134885393E-05"
+        iyz="-7.42146045757458E-09"
+        izz="2.87356847847328E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/connector_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/connector_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_hip_z"
+    type="revolute">
+    <origin
+      xyz="-0.0439986111539757 -0.000129382183819839 0.00981299171899357"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="hip_right" />
+    <child
+      link="connector_right" />
+    <axis
+      xyz="0 -1 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="thigh_right">
+    <inertial>
+      <origin
+        xyz="0.0125845723175254 -0.0882532787433838 0.00347794114277897"
+        rpy="0 0 0" />
+      <mass
+        value="0.0525603780069445" />
+      <inertia
+        ixx="0.000164505164670982"
+        ixy="-2.57360335304152E-05"
+        ixz="1.55750670462422E-06"
+        iyy="4.28521951082405E-05"
+        iyz="-1.37826427103934E-05"
+        izz="0.000166840955730417" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/thigh_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/thigh_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.0240706178161802 0"
+      rpy="0.851888886691965 -1.57079631189374 -0.851966327173274" />
+    <parent
+      link="connector_right" />
+    <child
+      link="thigh_right" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="leg_right">
+    <inertial>
+      <origin
+        xyz="-0.00417224550148893 -0.0697017338980009 0.022902461092346"
+        rpy="0 0 0" />
+      <mass
+        value="0.0419791217972163" />
+      <inertia
+        ixx="0.000157801382449013"
+        ixy="-1.07293662539476E-05"
+        ixz="-1.20445163573541E-09"
+        iyy="2.85327878678349E-05"
+        iyz="-7.67007226151558E-10"
+        izz="0.000156324244665514" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/leg_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/leg_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_knee_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1813 0"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="thigh_right" />
+    <child
+      link="leg_right" />
+    <axis
+      xyz="0 0 1" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="ankle_right">
+    <inertial>
+      <origin
+        xyz="-0.023114926343045 0.010519388814934 -0.0174273912614423"
+        rpy="0 0 0" />
+      <mass
+        value="0.158940110216978" />
+      <inertia
+        ixx="0.000100999537335994"
+        ixy="-3.89089821475012E-07"
+        ixz="9.71453260417569E-08"
+        iyy="8.94851242967165E-05"
+        iyz="-1.3234059352322E-06"
+        izz="4.26478364402734E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/ankle_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/ankle_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1776 0"
+      rpy="-1.58976261285556 1.57079631189374 -1.58976256347601" />
+    <parent
+      link="leg_right" />
+    <child
+      link="ankle_right" />
+    <axis
+      xyz="-1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="foot_right">
+    <inertial>
+      <origin
+        xyz="0.0315154629884953 -0.0269992236887103 1.09055966035498E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0654578417044245" />
+      <inertia
+        ixx="2.05608617217619E-05"
+        ixy="-2.22719251668104E-06"
+        ixz="-1.64627225486048E-10"
+        iyy="0.00012291353426211"
+        iyz="-3.83436680545449E-11"
+        izz="0.000109007319532219" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/foot_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/foot_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_ankle_x"
+    type="revolute">
+    <origin
+      xyz="-0.0231499999999999 0 0"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="ankle_right" />
+    <child
+      link="foot_right" />
+    <axis
+      xyz="-1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="hip_left">
+    <inertial>
+      <origin
+        xyz="0.0415789274102357 0.0189472976734961 -0.000115137883607901"
+        rpy="0 0 0" />
+      <mass
+        value="0.0849719714482978" />
+      <inertia
+        ixx="2.84337181248045E-05"
+        ixy="1.29227163600559E-06"
+        ixz="-8.51476950981157E-07"
+        iyy="2.90571624962875E-05"
+        iyz="-1.39227469091144E-06"
+        izz="2.19929362829017E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/hip_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/hip_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 -0.0137739863876173 0.0213108690035944"
+      rpy="1.5707963267949 6.12303176911189E-17 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip_left" />
+    <axis
+      xyz="0 0 -1" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="connector_left">
+    <inertial>
+      <origin
+        xyz="0.0135560278582716 -0.0233095792587646 -0.000129667158637468"
+        rpy="0 0 0" />
+      <mass
+        value="0.0814129515896634" />
+      <inertia
+        ixx="2.21251349508032E-05"
+        ixy="-7.22960725393508E-07"
+        ixz="-2.39639485796953E-07"
+        iyy="3.58011134559004E-05"
+        iyz="7.41999666600591E-09"
+        izz="2.87356847096051E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/connector_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/connector_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_hip_z"
+    type="revolute">
+    <origin
+      xyz="0.0439986111539757 -0.000187468480660018 0.00981299171899352"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="hip_left" />
+    <child
+      link="connector_left" />
+    <axis
+      xyz="0 -1 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="thight_left">
+    <inertial>
+      <origin
+        xyz="0.0109086182479042 0.0867869275539537 0.00487649127779129"
+        rpy="0 0 0" />
+      <mass
+        value="0.0465860115908861" />
+      <inertia
+        ixx="0.000157455624139253"
+        ixy="2.44544580426689E-05"
+        ixz="2.70175757619103E-06"
+        iyy="3.91980262235973E-05"
+        iyz="1.301347363535E-05"
+        izz="0.000160812190921193" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/thight_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/thight_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.02401253151934 0"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="connector_left" />
+    <child
+      link="thight_left" />
+    <axis
+      xyz="-1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="leg_left">
+    <inertial>
+      <origin
+        xyz="-0.00417224495796791 -0.0697017374810672 -0.0228975413240574"
+        rpy="0 0 0" />
+      <mass
+        value="0.0419791250643086" />
+      <inertia
+        ixx="0.000157801377119188"
+        ixy="-1.072936166312E-05"
+        ixz="-1.20701387869148E-09"
+        iyy="2.8532791827849E-05"
+        iyz="-7.47249895859385E-10"
+        izz="0.000156324232816626" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/leg_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/leg_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_knee_y"
+    type="revolute">
+    <origin
+      xyz="0 0.1813 0"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="thight_left" />
+    <child
+      link="leg_left" />
+    <axis
+      xyz="0 0 1" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="ankle_left">
+    <inertial>
+      <origin
+        xyz="0.0226850736757142 -0.0105193888472556 0.0174273913011536"
+        rpy="0 0 0" />
+      <mass
+        value="0.158940109150473" />
+      <inertia
+        ixx="0.00010099953716208"
+        ixy="3.89089835003232E-07"
+        ixz="-9.71453484601838E-08"
+        iyy="8.94851239016573E-05"
+        iyz="-1.32340593491644E-06"
+        izz="4.26478360826934E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/ankle_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/ankle_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1776 0"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="leg_left" />
+    <child
+      link="ankle_left" />
+    <axis
+      xyz="-1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="foot_left">
+    <inertial>
+      <origin
+        xyz="-0.0315154629858946 -0.0269992236882119 -1.09048828435092E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0654578415339568" />
+      <inertia
+        ixx="2.05608616734179E-05"
+        ixy="2.22719252717729E-06"
+        ixz="-1.64638083942211E-10"
+        iyy="0.00012291353410657"
+        iyz="3.83425296637955E-11"
+        izz="0.000109007319416185" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/foot_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/foot_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_ankle_x"
+    type="revolute">
+    <origin
+      xyz="0.0226499999999573 0 0"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="ankle_left" />
+    <child
+      link="foot_left" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="double_rotation">
+    <inertial>
+      <origin
+        xyz="-0.0253641353040842 0.0126372054387135 -0.0207582251509289"
+        rpy="0 0 0" />
+      <mass
+        value="0.164595868632138" />
+      <inertia
+        ixx="0.000146819919234288"
+        ixy="-2.48958208084095E-07"
+        ixz="-2.01995802225288E-07"
+        iyy="0.000126467135535001"
+        iyz="2.01915003836947E-06"
+        izz="6.40609583712973E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/double_rotation.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/double_rotation.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abs_y"
+    type="revolute">
+    <origin
+      xyz="0.0218129917189935 -0.011015725450964 0.0803108690035944"
+      rpy="1.5931944938464 6.12303176911189E-17 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="double_rotation" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="abdomen">
+    <inertial>
+      <origin
+        xyz="3.67058353691052E-07 0.0437132916954848 -0.023558675143191"
+        rpy="0 0 0" />
+      <mass
+        value="0.0366944426741636" />
+      <inertia
+        ixx="5.53082548283559E-05"
+        ixy="-5.65903043805176E-11"
+        ixz="-1.09575969166407E-10"
+        iyy="5.59316851587344E-05"
+        iyz="1.10642796126887E-06"
+        izz="2.33750058682151E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/abdomen.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/abdomen.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abs_x"
+    type="revolute">
+    <origin
+      xyz="-0.0253 0 0"
+      rpy="1.00579267137135E-14 0 0" />
+    <parent
+      link="double_rotation" />
+    <child
+      link="abdomen" />
+    <axis
+      xyz="0 -0.0447813533860361 -0.998996812001377" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="spine">
+    <inertial>
+      <origin
+        xyz="2.78198725126022E-07 -0.0283207891779066 -0.0113669414619919"
+        rpy="0 0 0" />
+      <mass
+        value="0.0927712324910389" />
+      <inertia
+        ixx="3.80206634962487E-05"
+        ixy="-1.49119530971764E-09"
+        ixz="1.85154212648429E-10"
+        iyy="2.72522976329523E-05"
+        iyz="-1.22577201794734E-06"
+        izz="3.22630225405522E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/spine.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/spine.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abs_z"
+    type="revolute">
+    <origin
+      xyz="0 0.0516060322381877 -0.00236335885975434"
+      rpy="4.85375628578311E-15 0 3.14159265358979" />
+    <parent
+      link="abdomen" />
+    <child
+      link="spine" />
+    <axis
+      xyz="0 0.998996812001377 0.0447813533860311" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="double_rot">
+    <inertial>
+      <origin
+        xyz="-0.000164926338151163 0.00972841381260683 -0.0178809810046785"
+        rpy="0 0 0" />
+      <mass
+        value="0.158940113183286" />
+      <inertia
+        ixx="0.000100999538359746"
+        ixy="-3.8434916140695E-07"
+        ixz="1.14471860756323E-07"
+        iyy="8.95096081723409E-05"
+        iyz="7.77234739352169E-07"
+        izz="4.2623354209774E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/double_rot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/double_rot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bust_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.0780744897708274 -0.000696980519353779"
+      rpy="9.68669588985449E-15 0 3.14159265358979" />
+    <parent
+      link="spine" />
+    <child
+      link="double_rot" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="chest">
+    <inertial>
+      <origin
+        xyz="-0.000192420759316199 0.0495589434556127 -0.0134402199707456"
+        rpy="0 0 0" />
+      <mass
+        value="0.289706532228943" />
+      <inertia
+        ixx="0.000177439298212117"
+        ixy="-3.33427645435266E-09"
+        ixz="-2.41128146960153E-08"
+        iyy="0.000819305791153637"
+        iyz="5.95500740143152E-06"
+        izz="0.000752801554443269" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/chest.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/chest.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bust_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="6.2450045135165E-17 0 0" />
+    <parent
+      link="double_rot" />
+    <child
+      link="chest" />
+    <axis
+      xyz="0 -0.0447813533860429 -0.998996812001377" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="neck">
+    <inertial>
+      <origin
+        xyz="3.18851506690698E-07 0.000490429973152202 -0.010889949670876"
+        rpy="0 0 0" />
+      <mass
+        value="0.0072913429870996" />
+      <inertia
+        ixx="1.22579571337165E-06"
+        ixy="1.52049229914982E-12"
+        ixz="-2.48985595859172E-11"
+        iyy="3.23479773073891E-06"
+        iyz="-1.59003535865927E-08"
+        izz="2.8772505244401E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/neck.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/neck.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_z"
+    type="revolute">
+    <origin
+      xyz="-0.000200000000000145 0.0838469416073619 9.53160975066848E-05"
+      rpy="-1.57079632679489 0 3.14159265358979" />
+    <parent
+      link="chest" />
+    <child
+      link="neck" />
+    <axis
+      xyz="0 -0.0447813533860304 0.998996812001377" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="head">
+    <inertial>
+      <origin
+        xyz="0.0007891068887819 0.0129226815547346 -0.0348332120149866"
+        rpy="0 0 0" />
+      <mass
+        value="0.184693508877715" />
+      <inertia
+        ixx="0.000364618563253798"
+        ixy="-3.00186807694563E-06"
+        ixz="-6.72389726278707E-07"
+        iyy="0.000443241300475484"
+        iyz="-1.17195324786182E-05"
+        izz="0.000357166814955868" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/head.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/head.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_y"
+    type="revolute">
+    <origin
+      xyz="0 0.00116348409188567 -0.0259553767522054"
+      rpy="-1.3264502315157 0 3.14159265358979" />
+    <parent
+      link="neck" />
+    <child
+      link="head" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="FR07_right">
+    <inertial>
+      <origin
+        xyz="-3.36582782448774E-06 -0.00861937611439324 -4.52415882534751E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.00894202447692134" />
+      <inertia
+        ixx="1.42488978245158E-06"
+        ixy="1.01747724230234E-10"
+        ixz="-5.51915243876169E-21"
+        iyy="3.25649415961663E-06"
+        iyz="9.51991950375278E-22"
+        izz="3.51897301590266E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/FR07_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/FR07_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="-0.0790999999998339 0.0493230513610038 0.00164289513961273"
+      rpy="3.90753593681127E-13 1.52599999269205 -1.5707963267949" />
+    <parent
+      link="chest" />
+    <child
+      link="FR07_right" />
+    <axis
+      xyz="0 1 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="shoulder_right">
+    <inertial>
+      <origin
+        xyz="5.7459704216889E-09 -0.0126362712836382 0.00047712549304536"
+        rpy="0 0 0" />
+      <mass
+        value="0.083037525302252" />
+      <inertia
+        ixx="2.7804004029184E-05"
+        ixy="-7.64708380784364E-12"
+        ixz="2.13918076507602E-11"
+        iyy="1.64009175403692E-05"
+        iyz="4.2744132511633E-07"
+        izz="2.28565356916474E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/shoulder_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/shoulder_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 -0.0300000000000462 0"
+      rpy="-1.52599999269207 3.94224571817045E-13 1.5707963267949" />
+    <parent
+      link="FR07_right" />
+    <child
+      link="shoulder_right" />
+    <axis
+      xyz="0 -0.0447813533860306 -0.998996812001378" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="upper_arm_right">
+    <inertial>
+      <origin
+        xyz="-3.29931920912963E-05 -0.0622003125407846 0.0134538545225805"
+        rpy="0 0 0" />
+      <mass
+        value="0.169237898818377" />
+      <inertia
+        ixx="0.000282130773977546"
+        ixy="6.02977598378281E-07"
+        ixz="-2.32789644043714E-08"
+        iyy="4.31662712474471E-05"
+        iyz="-7.18505715914779E-06"
+        izz="0.000276923986258296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/upper_arm_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/upper_arm_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_arm_z"
+    type="revolute">
+    <origin
+      xyz="0 -0.0367237067997166 -0.00836385322538765"
+      rpy="1.14491749414469E-16 0 0" />
+    <parent
+      link="shoulder_right" />
+    <child
+      link="upper_arm_right" />
+    <axis
+      xyz="0 -0.998996812001377 0.0447813533860303" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="forearm_right">
+    <inertial>
+      <origin
+        xyz="-0.00678629097237549 -0.107764762029519 -0.000396269568889013"
+        rpy="0 0 0" />
+      <mass
+        value="0.047897470775852" />
+      <inertia
+        ixx="0.000184822197092447"
+        ixy="7.89535954519495E-06"
+        ixz="-3.00761940827768E-07"
+        iyy="1.62842902157262E-05"
+        iyz="-2.18677017405899E-05"
+        izz="0.000180062864155389" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/forearm_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/forearm_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_elbow_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.111127821376455 0.0149914935264853"
+      rpy="-4.99947305776516E-15 0 0" />
+    <parent
+      link="upper_arm_right" />
+    <child
+      link="forearm_right" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="FR07_left">
+    <inertial>
+      <origin
+        xyz="-3.365829875146E-06 -0.00861937611419793 1.32671651442706E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0089420244769213" />
+      <inertia
+        ixx="1.42488978245157E-06"
+        ixy="1.01747724222461E-10"
+        ixz="1.88286646597705E-21"
+        iyy="3.25649415961663E-06"
+        iyz="1.69541898714562E-21"
+        izz="3.51897301590265E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/FR07_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/FR07_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0.0787000000001311 0.0493230513610325 0.00164289513954789"
+      rpy="-3.90753593680837E-13 -1.52599999269202 1.57079632679489" />
+    <parent
+      link="chest" />
+    <child
+      link="FR07_left" />
+    <axis
+      xyz="0 -1 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="shoulder_left">
+    <inertial>
+      <origin
+        xyz="5.74613884252173E-09 -0.0126362712854903 0.000477125494036897"
+        rpy="0 0 0" />
+      <mass
+        value="0.0830375252943975" />
+      <inertia
+        ixx="2.78040040246843E-05"
+        ixy="-7.64675156578154E-12"
+        ixz="2.13915980646121E-11"
+        iyy="1.64009175384925E-05"
+        iyz="4.27441327452685E-07"
+        izz="2.28565356890018E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/shoulder_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/shoulder_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 -0.0299999999999616 0"
+      rpy="-1.52599999269219 3.94224571817045E-13 -1.5707963267949" />
+    <parent
+      link="FR07_left" />
+    <child
+      link="shoulder_left" />
+    <axis
+      xyz="0 -0.0447813533857198 -0.998996812001391" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="upper_arm_left">
+    <inertial>
+      <origin
+        xyz="3.28837369997087E-05 -0.06220031244075 0.0134538561720082"
+        rpy="0 0 0" />
+      <mass
+        value="0.169237898665871" />
+      <inertia
+        ixx="0.000282130773766475"
+        ixy="-6.02740631644496E-07"
+        ixz="2.34597428427248E-08"
+        iyy="4.31662737382289E-05"
+        iyz="-7.18507309436733E-06"
+        izz="0.00027692398589702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/upper_arm_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/upper_arm_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_arm_z"
+    type="revolute">
+    <origin
+      xyz="0 -0.0367237067998052 -0.00836385322581195"
+      rpy="-5.03416752728469E-15 0 0" />
+    <parent
+      link="shoulder_left" />
+    <child
+      link="upper_arm_left" />
+    <axis
+      xyz="0 -0.998996812001392 0.0447813533857153" />
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <link
+    name="forearm_left">
+    <inertial>
+      <origin
+        xyz="0.00678483441322712 -0.107764593516332 -0.000396413592255278"
+        rpy="0 0 0" />
+      <mass
+        value="0.0478974644166474" />
+      <inertia
+        ixx="0.000184823809526532"
+        ixy="-7.89240481456416E-06"
+        ixz="2.99057607500535E-07"
+        iyy="1.62841796052385E-05"
+        iyz="-2.18682163947639E-05"
+        izz="0.000180064312464129" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/forearm_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_poppy_control/meshes/flat_foot/forearm_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_elbow_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.111127821376481 0.0149914935264354"
+      rpy="-1.98320526667573E-13 0 0" />
+    <parent
+      link="upper_arm_left" />
+    <child
+      link="forearm_left" />
+    <axis
+      xyz="1 0 0" />
+  <limit effort="3" lower="-1.57079" upper="1.57079"
+	 velocity="3.1415"/> </joint>
+
+
+  <transmission name="r_hip_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_hip_x"/>
+    <actuator name="r_hip_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="r_hip_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_hip_y"/>
+    <actuator name="r_hip_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="r_hip_z_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_hip_z"/>
+    <actuator name="r_hip_z_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+
+  <transmission name="l_hip_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_hip_x"/>
+    <actuator name="l_hip_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="l_hip_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_hip_y"/>
+    <actuator name="l_hip_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="l_hip_z_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_hip_z"/>
+    <actuator name="l_hip_z_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+  <transmission name="r_knee_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_knee_y"/>
+    <actuator name="r_knee_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="l_knee_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_knee_y"/>
+    <actuator name="l_knee_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="r_ankle_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_ankle_y"/>
+    <actuator name="r_ankle_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="l_ankle_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_ankle_y"/>
+    <actuator name="l_ankle_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+    <transmission name="r_ankle_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_ankle_x"/>
+    <actuator name="r_ankle_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="l_ankle_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_ankle_x"/>
+    <actuator name="l_ankle_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+  <transmission name="abs_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="abs_x"/>
+    <actuator name="abs_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="abs_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="abs_y"/>
+    <actuator name="abs_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="abs_z_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="abs_z"/>
+    <actuator name="abs_z_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="bust_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="bust_x"/>
+    <actuator name="bust_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="bust_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="bust_y"/>
+    <actuator name="bust_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+
+
+
+    <transmission name="l_shoulder_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_shoulder_x"/>
+    <actuator name="l_shoulder_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="l_shoulder_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_shoulder_y"/>
+    <actuator name="l_shoulder_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+    <transmission name="r_shoulder_x_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_shoulder_x"/>
+    <actuator name="r_shoulder_x_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="r_shoulder_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_shoulder_y"/>
+    <actuator name="r_shoulder_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+    <transmission name="r_elbow_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_elbow_y"/>
+    <actuator name="r_elbow_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+    <transmission name="l_elbow_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_elbow_y"/>
+    <actuator name="l_elbow_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="r_arm_z_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="r_arm_z"/>
+    <actuator name="r_arm_z_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+    <transmission name="l_arm_z_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="l_arm_z"/>
+    <actuator name="l_arm_z_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="head_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="head_y"/>
+    <actuator name="head_y_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="head_z_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="head_z"/>
+    <actuator name="head_z_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+</robot>
