@@ -5,9 +5,15 @@ project(poppy_gazebo)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  ros_control
-  ros_controllers
-)
+  imu_sensor_controller
+  force_torque_sensor_controller
+  position_controllers
+  velocity_controllers
+  effort_controllers
+  forward_command_controller
+  joint_state_controller
+  joint_trajectory_controller
+  )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
