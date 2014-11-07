@@ -1,7 +1,7 @@
 <launch>
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <rosparam file="$(find test_poppy_control)/config/poppy_flat_feet_control.yaml" command="load"/>
+  <rosparam file="$(find poppy_gazebo)/config/poppy_flat_feet_control.yaml" command="load"/>
 
   <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/poppy" args="joint_state_controller r_hip_x_position_controller r_hip_y_position_controller r_hip_z_position_controller l_hip_x_position_controller l_hip_y_position_controller l_hip_z_position_controller l_knee_y_position_controller l_ankle_y_position_controller r_knee_y_position_controller r_ankle_y_position_controller abs_x_position_controller abs_y_position_controller abs_z_position_controller bust_x_position_controller bust_y_position_controller l_shoulder_x_position_controller l_shoulder_y_position_controller r_shoulder_x_position_controller r_shoulder_y_position_controller r_elbow_y_position_controller l_elbow_y_position_controller r_arm_z_position_controller l_arm_z_position_controller r_ankle_x_position_controller l_ankle_x_position_controller head_y_position_controller head_z_position_controller"/>

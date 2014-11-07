@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/base_link.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/base_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -28,7 +28,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/base_link.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/base_link.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -56,7 +56,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/double_rotation.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/double_rotation.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -65,7 +65,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/double_rotation.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/double_rotation.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -107,7 +107,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/abdomen.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/abdomen.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -116,7 +116,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/abdomen.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/abdomen.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -158,7 +158,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/spine.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/spine.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -167,7 +167,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/spine.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/spine.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -209,7 +209,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/double_rot.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/double_rot.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -218,7 +218,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/double_rot.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/double_rot.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -260,7 +260,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/chest.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/chest.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -269,7 +269,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/chest.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/chest.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -311,7 +311,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/neck.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/neck.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -320,7 +320,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/neck.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/neck.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -362,7 +362,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/head.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/head.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -371,7 +371,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/head.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/head.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -413,7 +413,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/FR07_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/FR07_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -422,7 +422,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/FR07_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/FR07_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -464,7 +464,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/shoulder_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/shoulder_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -473,7 +473,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/shoulder_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/shoulder_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -515,7 +515,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/upper_arm_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/upper_arm_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -524,7 +524,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/upper_arm_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/upper_arm_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -566,7 +566,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/forearm_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/forearm_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -575,7 +575,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/forearm_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/forearm_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -617,7 +617,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/FR07_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/FR07_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -626,7 +626,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/FR07_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/FR07_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -668,7 +668,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/shoulder_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/shoulder_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -677,7 +677,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/shoulder_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/shoulder_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -719,7 +719,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/upper_arm_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/upper_arm_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -728,7 +728,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/upper_arm_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/upper_arm_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -770,7 +770,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/forearm_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/forearm_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -779,7 +779,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/forearm_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/forearm_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -821,7 +821,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/hip_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/hip_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -830,7 +830,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/hip_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/hip_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -872,7 +872,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/connector_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/connector_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -881,7 +881,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/connector_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/connector_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -923,7 +923,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/thight_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/thight_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -932,7 +932,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/thight_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/thight_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -974,7 +974,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/leg_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/leg_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -983,7 +983,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/leg_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/leg_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1025,7 +1025,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/ankle_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/ankle_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1034,7 +1034,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/ankle_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/ankle_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1076,7 +1076,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/foot_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/foot_left.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1085,7 +1085,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/foot_left.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/foot_left.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1127,7 +1127,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/hip_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/hip_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1136,7 +1136,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/hip_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/hip_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1178,7 +1178,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/connector_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/connector_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1187,7 +1187,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/connector_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/connector_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1229,7 +1229,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/thigh_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/thigh_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1238,7 +1238,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/thigh_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/thigh_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1280,7 +1280,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/leg_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/leg_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1289,7 +1289,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/leg_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/leg_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1331,7 +1331,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/ankle_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/ankle_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1340,7 +1340,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/ankle_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/ankle_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1382,7 +1382,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/foot_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/foot_right.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1391,7 +1391,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://test_poppy_control/meshes/flat_foot/foot_right.STL</uri>
+            <uri>model://poppy_gazebo/meshes/flat_foot/foot_right.STL</uri>
           </mesh>
         </geometry>
       </visual>
