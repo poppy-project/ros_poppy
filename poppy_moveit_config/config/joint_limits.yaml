@@ -1,0 +1,126 @@
+joint_limits:
+  abs_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  abs_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  abs_z:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  bust_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  bust_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_hip_z:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_ankle_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_hip_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_knee_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_ankle_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_hip_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_arm_z:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_elbow_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_shoulder_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_knee_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_hip_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_shoulder_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_hip_z:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  l_hip_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_shoulder_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_shoulder_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_arm_z:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_elbow_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_ankle_x:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_ankle_y:
+    has_velocity_limits: true
+    max_velocity: 3.1415
+    has_acceleration_limits: false
+    max_acceleration: 0

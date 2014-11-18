@@ -1,0 +1,26 @@
+<package>
+
+  <name>poppy_moveit_config</name>
+  <version>0.2.0</version>
+  <description>
+     Integration of Poppy in Moveit
+  </description>
+  <maintainer email="yoan.mollard@inria.fr">Yoan Mollard</maintainer>
+
+  <license>LGPLv3</license>
+
+  <url type="website">http://poppy-project.org/</url>
+
+  <run_depend>moveit_ros_move_group</run_depend>
+  <run_depend>moveit_planners_ompl</run_depend>
+  <run_depend>moveit_ros_visualization</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>xacro</run_depend>
+  <build_depend>poppy_gazebo</build_depend>
+  <run_depend>poppy_gazebo</run_depend>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+</package>

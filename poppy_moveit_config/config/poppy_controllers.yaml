@@ -1,0 +1,6 @@
+controller_list:
+  - name: /poppy
+    action_ns: poppy_trajectory_follower
+    type: FollowJointTrajectory
+    default: true
+    joints: ['abs_x', 'abs_y', 'abs_z', 'bust_x', 'bust_y', 'head_y', 'head_z', 'l_ankle_x', 'l_ankle_y', 'l_arm_z', 'l_elbow_y', 'l_hip_x', 'l_hip_y', 'l_hip_z', 'l_knee_y', 'l_shoulder_x', 'l_shoulder_y', 'r_ankle_x', 'r_ankle_y', 'r_arm_z', 'r_elbow_y', 'r_hip_x', 'r_hip_y', 'r_hip_z', 'r_knee_y', 'r_shoulder_x', 'r_shoulder_y']

@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- Launches the main controller for Poppy (this should be done elsewhere because it's not private to Moveit) -->  
+  <node name="poppy_trajectory_follower" pkg="poppy_moveit_config" type="poppy_trajectory_follower.py" respawn="true" output="screen"/>
+
+  <!-- Flag indicating whether MoveIt! is allowed to load/unload  or switch controllers -->
+  <arg name="moveit_manage_controllers" default="true"/>
+  <param name="moveit_manage_controllers" value="$(arg moveit_manage_controllers)"/>
+
+  <!-- When determining the expected duration of a trajectory, this multiplicative factor is applied to get the allowed duration of execution -->
+  <param name="allowed_execution_duration_scaling" value="1.2"/> <!-- default 1.2 -->
+  <!-- Allow more than the expected execution time before triggering a trajectory cancel (applied after scaling) -->
+  <param name="allowed_goal_duration_margin" value="0.5"/> <!-- default 0.5 -->
+
+  <!-- The rest is only to convince Moveit to use the preceding controller thanks to a controller manager...  -->   
+  <!-- Load the robot specific controller manager; this sets the moveit_controller_manager ROS parameter -->
+  <arg name="moveit_controller_manager" default="poppy" />
+  <include file="$(find poppy_moveit_config)/launch/$(arg moveit_controller_manager)_controller_manager.launch" />
+  
+</launch>
