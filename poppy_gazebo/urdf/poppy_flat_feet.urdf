@@ -104,7 +104,7 @@
       link="hip_right" />
     <axis
       xyz="0 0 -1" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="connector_right">
     <inertial>
@@ -157,7 +157,7 @@
       link="connector_right" />
     <axis
       xyz="0 -1 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="thigh_right">
     <inertial>
@@ -210,7 +210,7 @@
       link="thigh_right" />
     <axis
       xyz="1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="leg_right">
     <inertial>
@@ -263,7 +263,7 @@
       link="leg_right" />
     <axis
       xyz="0 0 1" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="ankle_right">
     <inertial>
@@ -316,7 +316,7 @@
       link="ankle_right" />
     <axis
       xyz="-1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="foot_right">
     <inertial>
@@ -369,7 +369,7 @@
       link="foot_right" />
     <axis
       xyz="-1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="hip_left">
     <inertial>
@@ -422,7 +422,7 @@
       link="hip_left" />
     <axis
       xyz="0 0 -1" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="connector_left">
     <inertial>
@@ -475,7 +475,7 @@
       link="connector_left" />
     <axis
       xyz="0 -1 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="thight_left">
     <inertial>
@@ -528,7 +528,7 @@
       link="thight_left" />
     <axis
       xyz="-1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="leg_left">
     <inertial>
@@ -581,7 +581,7 @@
       link="leg_left" />
     <axis
       xyz="0 0 1" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="ankle_left">
     <inertial>
@@ -634,7 +634,7 @@
       link="ankle_left" />
     <axis
       xyz="-1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="foot_left">
     <inertial>
@@ -687,7 +687,7 @@
       link="foot_left" />
     <axis
       xyz="1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="double_rotation">
     <inertial>
@@ -740,7 +740,7 @@
       link="double_rotation" />
     <axis
       xyz="1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="abdomen">
     <inertial>
@@ -793,7 +793,7 @@
       link="abdomen" />
     <axis
       xyz="0 -0.0447813533860361 -0.998996812001377" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="spine">
     <inertial>
@@ -846,7 +846,7 @@
       link="spine" />
     <axis
       xyz="0 0.998996812001377 0.0447813533860311" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="double_rot">
     <inertial>
@@ -899,7 +899,7 @@
       link="double_rot" />
     <axis
       xyz="1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="chest">
     <inertial>
@@ -952,7 +952,7 @@
       link="chest" />
     <axis
       xyz="0 -0.0447813533860429 -0.998996812001377" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="neck">
     <inertial>
@@ -1005,7 +1005,7 @@
       link="neck" />
     <axis
       xyz="0 -0.0447813533860304 0.998996812001377" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="head">
     <inertial>
@@ -1058,7 +1058,7 @@
       link="head" />
     <axis
       xyz="1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="FR07_right">
     <inertial>
@@ -1111,7 +1111,7 @@
       link="FR07_right" />
     <axis
       xyz="0 1 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="shoulder_right">
     <inertial>
@@ -1164,7 +1164,7 @@
       link="shoulder_right" />
     <axis
       xyz="0 -0.0447813533860306 -0.998996812001378" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="upper_arm_right">
     <inertial>
@@ -1217,7 +1217,7 @@
       link="upper_arm_right" />
     <axis
       xyz="0 -0.998996812001377 0.0447813533860303" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="forearm_right">
     <inertial>
@@ -1270,7 +1270,7 @@
       link="forearm_right" />
     <axis
       xyz="1 0 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="FR07_left">
     <inertial>
@@ -1323,7 +1323,7 @@
       link="FR07_left" />
     <axis
       xyz="0 -1 0" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="shoulder_left">
     <inertial>
@@ -1376,7 +1376,7 @@
       link="shoulder_left" />
     <axis
       xyz="0 -0.0447813533857198 -0.998996812001391" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="upper_arm_left">
     <inertial>
@@ -1429,7 +1429,7 @@
       link="upper_arm_left" />
     <axis
       xyz="0 -0.998996812001392 0.0447813533857153" />
-  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/> </joint>
+  <limit effort="3" lower="-1.57079" upper="1.57079" velocity="3.1415"/>  </joint>
   <link
     name="forearm_left">
     <inertial>
@@ -1483,14 +1483,15 @@
     <axis
       xyz="1 0 0" />
   <limit effort="3" lower="-1.57079" upper="1.57079"
-	 velocity="3.1415"/> </joint>
+	 velocity="3.1415"/>  </joint>
 
 
   <transmission name="r_hip_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_hip_x"/>
-    <actuator name="r_hip_x_motor">
+    <joint name="r_hip_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_hip_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1498,18 +1499,20 @@
 
   <transmission name="r_hip_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_hip_y"/>
-    <actuator name="r_hip_y_motor">
+    <joint name="r_hip_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_hip_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="r_hip_z_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_hip_z"/>
-    <actuator name="r_hip_z_motor">
+    <joint name="r_hip_z">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
+    <actuator name="r_hip_z_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1519,9 +1522,10 @@
 
   <transmission name="l_hip_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_hip_x"/>
-    <actuator name="l_hip_x_motor">
+    <joint name="l_hip_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_hip_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1529,18 +1533,20 @@
 
   <transmission name="l_hip_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_hip_y"/>
-    <actuator name="l_hip_y_motor">
+    <joint name="l_hip_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_hip_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="l_hip_z_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_hip_z"/>
-    <actuator name="l_hip_z_motor">
+    <joint name="l_hip_z">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_hip_z_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1549,9 +1555,10 @@
 
   <transmission name="r_knee_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_knee_y"/>
+    <joint name="r_knee_y">
+ <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
     <actuator name="r_knee_y_motor">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1559,9 +1566,10 @@
 
   <transmission name="l_knee_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_knee_y"/>
+    <joint name="l_knee_y">
+    <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
     <actuator name="l_knee_y_motor">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1569,9 +1577,10 @@
 
   <transmission name="r_ankle_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_ankle_y"/>
-    <actuator name="r_ankle_y_motor">
+    <joint name="r_ankle_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_ankle_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1579,9 +1588,10 @@
 
   <transmission name="l_ankle_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_ankle_y"/>
+    <joint name="l_ankle_y">
+<hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
     <actuator name="l_ankle_y_motor">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1590,9 +1600,10 @@
 
     <transmission name="r_ankle_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_ankle_x"/>
-    <actuator name="r_ankle_x_motor">
+    <joint name="r_ankle_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_ankle_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1600,9 +1611,10 @@
 
   <transmission name="l_ankle_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_ankle_x"/>
-    <actuator name="l_ankle_x_motor">
+    <joint name="l_ankle_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_ankle_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1611,27 +1623,30 @@
 
   <transmission name="abs_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="abs_x"/>
-    <actuator name="abs_x_motor">
+    <joint name="abs_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="abs_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="abs_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="abs_y"/>
-    <actuator name="abs_y_motor">
+    <joint name="abs_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="abs_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
   <transmission name="abs_z_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="abs_z"/>
-    <actuator name="abs_z_motor">
+    <joint name="abs_z">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="abs_z_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1639,83 +1654,83 @@
 
   <transmission name="bust_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="bust_x"/>
-    <actuator name="bust_x_motor">
+    <joint name="bust_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="bust_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="bust_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="bust_y"/>
-    <actuator name="bust_y_motor">
+    <joint name="bust_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="bust_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
 
-
-
-
-
     <transmission name="l_shoulder_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_shoulder_x"/>
-    <actuator name="l_shoulder_x_motor">
+    <joint name="l_shoulder_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_shoulder_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="l_shoulder_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_shoulder_y"/>
-    <actuator name="l_shoulder_y_motor">
+    <joint name="l_shoulder_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_shoulder_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
 
-
     <transmission name="r_shoulder_x_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_shoulder_x"/>
-    <actuator name="r_shoulder_x_motor">
+    <joint name="r_shoulder_x">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_shoulder_x_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="r_shoulder_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_shoulder_y"/>
-    <actuator name="r_shoulder_y_motor">
+    <joint name="r_shoulder_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_shoulder_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-
 
 
     <transmission name="r_elbow_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_elbow_y"/>
-    <actuator name="r_elbow_y_motor">
+    <joint name="r_elbow_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_elbow_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
-
-
     <transmission name="l_elbow_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_elbow_y"/>
-    <actuator name="l_elbow_y_motor">
+    <joint name="l_elbow_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_elbow_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1723,38 +1738,41 @@
 
   <transmission name="r_arm_z_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_arm_z"/>
-    <actuator name="r_arm_z_motor">
+    <joint name="r_arm_z">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="r_arm_z_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
 
-
     <transmission name="l_arm_z_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_arm_z"/>
-    <actuator name="l_arm_z_motor">
+    <joint name="l_arm_z">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="l_arm_z_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
   <transmission name="head_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="head_y"/>
-    <actuator name="head_y_motor">
+    <joint name="head_y">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="head_y_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
     <transmission name="head_z_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="head_z"/>
-    <actuator name="head_z_motor">
+    <joint name="head_z">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="head_z_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
